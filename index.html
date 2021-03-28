@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
 </head>
 
 <body>
@@ -111,6 +112,42 @@
         <div>
             <h2><b>Выберите фильм</b></h2>
         </div>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Начало сеанса</th>
+                    <th>Название фильма</th>
+                    <th>Жанр</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th></th>
+                    <th>10:00</th>
+                    <th>Человек-паук</th>
+                    <th>Фантастика, боевик, приключения</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>12:00</th>
+                    <th>Собачья жизнь 2</th>
+                    <th>Фэнтези, драма, комедия</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>14:00</th>
+                    <th>История игрушек 4</th>
+                    <th>Мультфильм, фэнтези, комедия</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>16:00</th>
+                    <th>Люди в черном: Интернэшнл</th>
+                    <th>Фантастика, боевик, комедия</th>
+                </tr>
+            </tbody>
+        </table>
         <!-- таблица -->
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
             et dolore magna aliqua. Ut enim ad minim veniam. </p>
@@ -251,6 +288,29 @@
             <img src="images\krists-luhaers-AtPWnYNDJnM-unsplash.png" alt="кинотеатр">
             <h2><b>Обратная связь</b></h2>
             <!-- заполнение формы -->
+            <form action="/send">
+                <div>
+                    <label> Имя пользователя
+                        <input id="input1" type="tel" name="username" value="" required>
+                    </label>
+                </div>
+                <div>
+                    <label>Место
+                        <select name="place"></select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </label>
+                </div>
+                <div>
+                    <label for="chb1">Я согласен
+                    </label>
+                    <input id="chb1" type="checkbox" required>
+
+                </div>
+            </form>
+
             <button><b>Послать</b></button>
         </div>
     </section>
