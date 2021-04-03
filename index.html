@@ -114,49 +114,44 @@
         <!-- таблица -->
         <div class="block03">
             <div class="container">
-                <p>Выберите фильм</p>
+                <h2>Выберите фильм</h2>
 
                 <table class="block03__table">
-                    <tr>
-                        <th>
-                        <th></th>
-                        <th>
-                            <a href="#" class="block03_link">
-                                Начало сеанса
-                                <svg width="849" height="45" viewBox="0 0 849 45" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0 10C0 4.47715 4.47715 0 10 0H839C844.523 0 849 4.47715 849 10V45H0V10Z"
-                                        fill="#A3CC40" />
-                                </svg>
-                        </th>
-                        <th>Название фильма</th>
-                        <th>Жанр</th>
-                        </th>
-                    </tr>
+                    <thead class="block03__table">
+                        <tr>
+                            <th></th>
+                            <th>
+                                <a href="#" class="block03_link">
+                                    Начало сеанса
+                            </th>
+                            <th>Название фильма</th>
+                            <th>Жанр</th>
+                        </tr>
+                    </thead>
                     <tbody>
                         <tr>
-                            <th></th>
-                            <th>10:00</th>
-                            <th>Человек-паук</th>
-                            <th>Фантастика, боевик, приключения</th>
+                            <td></td>
+                            <td>10:00</td>
+                            <td>Человек-паук</td>
+                            <td>Фантастика, боевик, приключения</td>
                         </tr>
                         <tr>
-                            <th></th>
-                            <th>12:00</th>
-                            <th>Собачья жизнь 2</th>
-                            <th>Фэнтези, драма, комедия</th>
+                            <td></td>
+                            <td>12:00</td>
+                            <td>Собачья жизнь 2</td>
+                            <td>Фэнтези, драма, комедия</td>
                         </tr>
                         <tr>
-                            <th></th>
-                            <th>14:00</th>
-                            <th>История игрушек 4</th>
-                            <th>Мультфильм, фэнтези, комедия</th>
+                            <td></td>
+                            <td>14:00</td>
+                            <td>История игрушек 4</td>
+                            <td>Мультфильм, фэнтези, комедия</td>
                         </tr>
                         <tr>
-                            <th></th>
-                            <th>16:00</th>
-                            <th>Люди в черном: Интернэшнл</th>
-                            <th>Фантастика, боевик, комедия</th>
+                            <td></td>
+                            <td>16:00</td>
+                            <td>Люди в черном: Интернэшнл</td>
+                            <td>Фантастика, боевик, комедия</td>
                         </tr>
                     </tbody>
                 </table>
@@ -196,7 +191,6 @@
                 etiam non quam.</p>
         </div>
         <div>
-            <!-- таблица с фильмами -->
             <p>
                 <div>
                     <span><br>Выживший</br></span>
@@ -300,7 +294,7 @@
             <img src="images\krists-luhaers-AtPWnYNDJnM-unsplash.png" alt="кинотеатр">
             <h2><b>Обратная связь</b></h2>
             <!-- заполнение формы -->
-            <form action="/send">
+            <form action="/order">
                 <div>
                     <label> Имя пользователя
                         <input id="input1" type="tel" name="username" value="" required>
@@ -308,22 +302,38 @@
                 </div>
                 <div>
                     <label>Место
-                        <select name="place"></select>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
+                        <select name="place">
+                            <!-- option[value=$]{$}*10 -->
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
                     </label>
                 </div>
                 <div>
-                    <label for="chb1">Я согласен
+                    <!-- отзыв -->
+                    <textarea name="Feedback" id="" cols="30" rows="10" placeholder="Напишите свой отзыв"></textarea>
+                </div>
+                <div>
+                    <label for="chb1">Я согласен на обработку своих персональных данных 
                     </label>
                     <input id="chb1" type="checkbox" required>
 
                 </div>
+                <div>
+                <input name="myFile" type="file">
+                </div>
+                <button type="submit"><b>Послать</b></button>
             </form>
 
-            <button><b>Послать</b></button>
+            
         </div>
     </section>
     <section>
