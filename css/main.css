@@ -1,8 +1,9 @@
-.block03_table {
+.block03__table {
   border-collapse: collapse;
   border-radius: 10px;
+  margin: 0 auto;
 }
-.block03_table tr {
+.block03__table tr {
   background: #a3cc40;
   padding: 10px 20px;
 }
@@ -16,14 +17,17 @@
   vertical-align: top;
   margin-top: 11px;
 }
-.block03_table td {
+.block03__table td {
     background: #373737;
 
 }
-.block03_table tr:nth-child(2n+1) td{
+.block03__table tr:nth-child(2n+1) td{
     background: #4C4D4F;
 }
 thead {
   background: #A3CC40;
 
+}
+#block03__table__foot {
+  background-color: white;
 }
