@@ -9,31 +9,44 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
+
+
+    </div>
 </head>
 
 <body>
-    <header>
-        <div>
-            <!-- лого -->
-            <img src="img/logo.svg" alt="">
-        </div>
-        <div>
-            <div>
-                <span>+7 (800) 355 12-56</span>
-                <span> <a href="mailto:kino@innopolis.ru">kino@innopolis.ru</a></span>
-                <span>ул.Спортивная д.1</span>
-                <span><b>Заказать звонок</b></span>
+    <!--Welcome block -->
+    <header class="welcome-block">
+        <div class="container">
+            <div class="welcome-block--header">
+                <div class="logo">
+                    <!-- лого -->
+                    <a href="https://innopolis.university/" target="_blank"><img src="images/logo.svg" alt="логотип">
+                    </a>
+                </div>
+
+                <div>
+                    <div>
+                        <span class="top-string--1">+7 (800) 355 12-56</span>
+                        <span> <a class="top-string--2" href="mailto:kino@innopolis.ru">kino@innopolis.ru</a></span>
+                        <span class="top-string--3">ул.Спортивная д.1</span>
+                        <button class="call-us"><b>Заказать звонок</b></button>
+                        <button>RU</button>
+                    </div>
+                    <ul class="nav-header">
+                        <li><a href="#">EVENT DETAILS</a></li>
+                        <li><a href="#">SPEAKERS</a></li>
+                        <li><a href="#">SPONSORS</a></li>
+                        <li><a href="#">PAST EVENTS</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div>
-            <div>
-                <h1>Закажите билет в кино</h1>
-            </div>
-            <div>
-                <h2><b>Всем покупателям подарок!</b></h2>
-            </div>
+            <h1 class="h1">Закажите билет в кино</h1>
+            <h2 class="h2"><b>Всем покупателям подарок!</b></h2>
         </div>
     </header>
+
     <section>
         <div>
             <span><b>Добро пожаловать!</b></span>
@@ -45,11 +58,11 @@
     </section>
     <section>
         <div>
-            <h2>Почему мы?</h2>
+            <h2 class="section-header">Почему мы?</h2>
         </div>
 
         <div>
-            <img src="images/3yoqeQbkSg8 1.png" alt="экран кинотеатра">
+            <img src="images\3yoqeQbkSg81.png" alt="экран кинотеатра">
             <span><b>Большие экраны</b></span>
         </div>
         <div>
@@ -112,16 +125,16 @@
     </section>
     <section>
         <!-- таблица -->
-        <div class="block03">
+        <div class="choose-film">
             <div class="container">
-                <h2>Выберите фильм</h2>
+                <h2 class="section-header">Выберите фильм</h2>
 
-                <table class="block03__table">
-                    <thead class="block03__head">
+                <table class="choose-film__table">
+                    <thead class="choose-film__head">
                         <tr>
                             <th></th>
                             <th>
-                                <a href="#" class="block03_link">
+                                <a href="#" class="choose-film_link">
                                     Начало сеанса
                             </th>
                             <th>Название фильма</th>
@@ -184,7 +197,9 @@
                     </tbody>
                     <tfoot>
                         <tr>
-                            <td colspan="4" id="block03__table__foot">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            <td colspan="4" id="choose-film__table__foot">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing
+                                elit, sed do eiusmod tempor
                                 incididunt ut labore
                                 et dolore magna aliqua. Ut enim ad minim veniam.
                             </td>
@@ -217,9 +232,9 @@
         </div>
     </section>
     <section>
-        <div>
-            <span><b>Фильмы</b></span>
-        </div>
+
+        <h2 class="section-header">Фильмы</h2>
+
         <div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                 et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar
@@ -242,9 +257,9 @@
     </section>
     <section>
         <div>
-            <div>
-                <h3><b>Товары</b></h3>
-            </div>
+
+            <h2 class="section-header">Товары</h2>
+
             <div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                     labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam
@@ -270,9 +285,7 @@
     <section>
         <div>
             <div>
-                <div>
-                    <h2><b>Отзывы</b></h2>
-                </div>
+                <h2 class="section-header">Отзывы</h2>
                 <div>
                     <span><q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                             ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam

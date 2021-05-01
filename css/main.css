@@ -1,33 +1,169 @@
-.block03__table {
+/** Шрифты */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url(../fonts/IBM_Plex_Serif/IBMPlexSerif-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url(../fonts/IBM_Plex_Serif/IBMPlexSerif-Bold.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url(../fonts/IBM_Plex_Serif/IBMPlexSerif-Thin.ttf);
+  font-weight: 100;
+  font-style: normal;
+}
+
+/**Общие стили**/
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+html {
+  font-size: 20px;
+}
+/*welcome-block*/
+.welcome-block {
+  background: url(/images/bc730baf868859c8ea1bf7ada963ce991.jpg) no-repeat top
+    center / cover;
+  height: 670px;
+  position: relative;
+  color: #fff;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+.welcome-block::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-left: 100vw solid transparent;
+  border-bottom: 6.5rem solid #fff;
+}
+.welcome-block .container {
+  margin: 0 auto;
+  max-width: 940px;
+}
+
+.welcome-block--header {
+  padding-top: 44px;
+  display: flex;
+}
+
+.welcome-block--header .logo {
+  padding-top: 2px;
+  padding-right: 44px;
+}
+
+.top-string--1 {
+  padding-right: 50px;
+}
+
+.top-string--2 {
+  padding-right: 39px;
+  color: #fff;
+}
+
+.top-string--3 {
+  padding-right: 50px;
+}
+
+.call-us {
+  width: 130px;
+  height: 21px;
+  left: 761px;
+  top: 44px;
+  border-radius: 4px;
+  /* добавить отступ справа*/
+}
+
+.nav-header {
+  padding-top: 14px;
+}
+
+.nav-header li {
+  display: inline-block;
+  margin-left: 50px;
+}
+
+.nav-header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-header li:first-child {
+  margin-left: 0;
+}
+
+.h1 {
+  font-style: normal;
+  font-weight: 100;
+  font-size: 68px;
+  line-height: 88px;
+  text-align: center;
+  padding-top: 131px;
+}
+
+.h2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 41px;
+  line-height: 53px;
+  text-align: center;
+  padding-top: 19px;
+}
+
+.choose-film__table {
   border-collapse: collapse;
   border-radius: 10px;
   margin: 0 auto;
 }
-.block03__table tr {
+.choose-film__table tr {
   background: #a3cc40;
   padding: 10px 20px;
 }
-.block03_link {
+.choose-film_link {
   font-weight: 600;
   font-size: 20px;
   line-height: 1.3;
 }
-.block03_link svg {
+.choose-film_link svg {
   display: inline-block;
   vertical-align: top;
   margin-top: 11px;
 }
-.block03__table td {
-    background: #373737;
-
+.choose-film__table td {
+  background: #373737;
 }
-.block03__table tr:nth-child(2n+1) td{
-    background: #4C4D4F;
+.choose-film__table tr:nth-child(2n + 1) td {
+  background: #4c4d4f;
 }
 thead {
-  background: #A3CC40;
-
+  background: #a3cc40;
 }
-#block03__table__foot {
+#choose-film__table__foot {
   background-color: white;
 }
+
+/** Сетка макета */
+
+/** Компоненты */
+.section-header {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 62px;
+
+  color: #a3cc40;
+}
+
+/** Медиа – правила */
