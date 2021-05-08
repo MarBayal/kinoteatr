@@ -21,11 +21,23 @@
 }
 
 /**Общие стили**/
+
 body {
   font-family: "IBM Plex Sans", sans-serif;
 }
 html {
   font-size: 20px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 940px;
+  position: relative;
+}
+.clearfix::after {
+  content: ""; /* Генерируем пустой элемент */
+  clear: both; /* Отменяем обтекание*/
+  display: block; /* Блочный элемент */
 }
 /*welcome-block*/
 .welcome-block {
@@ -47,10 +59,6 @@ html {
   left: 0;
   border-left: 100vw solid transparent;
   border-bottom: 6.5rem solid #fff;
-}
-.welcome-block .container {
-  margin: 0 auto;
-  max-width: 940px;
 }
 
 .welcome-block--header {
@@ -83,6 +91,32 @@ html {
   top: 44px;
   border-radius: 4px;
   /* добавить отступ справа*/
+}
+
+.welcome-block--dropdown---trigger span {
+  color: #fff;
+  font-weight: 500;
+  font-size: 12px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.welcome-block--dropdown---trigger svg {
+  fill: #fff;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.welcome-block--dropdown {
+  float: right;
+}
+
+.welcome-block--dropdown {
+  position: relative;
+}
+
+.dropdown-list {
+  position: absolute;
 }
 
 .nav-header {
@@ -151,6 +185,63 @@ thead {
 }
 #choose-film__table__foot {
   background-color: white;
+}
+
+.invite-welcome {
+  position: absolute;
+  bottom: -305px;
+  right: 0;
+  width: 426px;
+  height: 221px;
+  background: #ffffff;
+  box-shadow: 0px 27px 39px rgba(163, 204, 64, 0.18);
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+
+.invite-welcome--title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 33px;
+  line-height: 43px;
+  color: #333333;
+  margin-bottom: 22px;
+}
+
+.invite-welcome--text {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 14px;
+  margin-bottom: 20px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+/** Features **/
+.features {
+  position: relative;
+}
+
+.features-cards--block > div {
+  float: left;
+  width: 245px;
+  padding-right: 55px;
+}
+
+.features-card--title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.features-card--text {
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 14px;
+  text-align: center;
 }
 
 /** Сетка макета */
